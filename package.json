@@ -1,6 +1,6 @@
 {
-  "name": "@vector-im/compound-web",
-  "version": "7.9.0",
+  "name": "@tchapgouv/compound-web",
+  "version": "0.0.1",
   "description": "Compound components for the Web",
   "type": "module",
   "main": "./dist/index.cjs",
@@ -35,20 +35,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vector-im/compound-web.git"
+    "url": "git+https://github.com/tchapgouv/compound-web.git"
   },
   "keywords": [
     "compound",
     "components",
     "element",
-    "matrix.org"
+    "matrix.org",
+    "tchap"
   ],
   "author": "",
   "license": "SEE LICENSE IN README.md",
   "bugs": {
-    "url": "https://github.com/vector-im/compound/issues"
+    "url": "https://github.com/tchapgouv/compound/issues"
   },
-  "homepage": "https://github.com/vector-im/compound-web#readme",
+  "homepage": "https://github.com/tchapgouv/compound-web#readme",
   "devDependencies": {
     "@fontsource/inconsolata": "^5.0.8",
     "@fontsource/inter": "^5.0.8",
@@ -74,7 +75,7 @@
     "@types/react": "^19.0.0",
     "@typescript-eslint/eslint-plugin": "^8.0.0",
     "@typescript-eslint/parser": "^8.0.0",
-    "@vector-im/compound-design-tokens": "https://github.com/tchapgouv/compound-design-tokens.git#main",
+    "@vector-im/compound-design-tokens": "https://github.com/tchapgouv/compound-design-tokens.git#angelo",
     "@vitejs/plugin-react": "^4.0.4",
     "@vitest/coverage-v8": "^2.0.0",
     "browserslist-to-esbuild": "^2.0.0",
@@ -117,7 +118,7 @@
     "@fontsource/inconsolata": "^5",
     "@fontsource/inter": "^5",
     "@types/react": "*",
-    "@vector-im/compound-design-tokens": ">=1.6.1 <5.0.0",
+    "@vector-im/compound-design-tokens": "https://github.com/tchapgouv/compound-design-tokens.git#angelo",
     "react": "^18 || ^19.0.0"
   },
   "peerDependenciesMeta": {
