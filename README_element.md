@@ -1,21 +1,12 @@
-<p align="center"><img src="https://www.tchap.gouv.fr/themes/tchap/img/logos/tchap-logo.svg" width="300" alt="tchap-logo" /></p>
+<p align="center"><img src="https://compound.element.io/logo-readme.png" width="300" alt="" /></p>
 
-# Tchap compound Web
+# Compound Web
 
-[![](https://img.shields.io/badge/-Storybook-ff4785?logo=Storybook&logoColor=white&style=flat-square)](https://tchapgouv.github.io/compound-web/) [![](https://img.shields.io/github/license/vector-im/compound)](https://github.com/vector-im/compound/blob/main/LICENSE)
+[![](https://img.shields.io/badge/-Storybook-ff4785?logo=Storybook&logoColor=white&style=flat-square)](https://compound.element.io/) [![](https://img.shields.io/github/license/vector-im/compound)](https://github.com/vector-im/compound/blob/main/LICENSE)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=compound-web&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=compound-web)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=compound-web&metric=coverage)](https://sonarcloud.io/summary/new_code?id=compound-web)
 
-React implementation of Compound – Tchap's design system based on Element– See full documentation on https://tchapgouv.github.io/compound-web/
-
-It is using Tchap `compound-design-token` https://github.com/tchapgouv/compound-design-tokens `main` branch
-
-## New release
-
-When a new version of `compound-design-token` is avalaible, the `yarn.lock` of this package also needs to be updated.
-
-```
-rm -rf yarn.lock
-yarn install
-```
+React implementation of Compound – Element's design system – See full documentation on https://compound.element.io
 
 ## Development
 
@@ -48,10 +39,21 @@ $ cd ../../../../compound-web
 $ yarn link @types/react
 ```
 
+## Release
+
+To release a new version of Compound Web:
+
+1. Review the changes since last released and choose the [appropriate](https://semver.org/) version bump (major, minor, patch).
+1. Run the [Release npm package](https://github.com/vector-im/compound-web/actions/workflows/npm_release.yml) action, inputting the version bump.
+   The action will:
+   - add a commit bumping the version in `package.json`
+   - publish the package to npm
+   - tag a release on Github
+1. Manually add a changelog to the [release on github](https://github.com/vector-im/compound-web/releases).
+
 ## Copyright & License
 
 Copyright (c) 2023-2025 New Vector Ltd
-2025, Direction interministérielle du numérique
 
 This software is multi licensed by New Vector Ltd (Element). It can be used either:
 
