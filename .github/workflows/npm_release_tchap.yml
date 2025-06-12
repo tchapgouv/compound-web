@@ -1,0 +1,43 @@
+name: Release npm package tchap
+on:
+    push:
+        tags:
+            - "tchap-*"
+
+concurrency: release
+jobs:
+  release:
+    name: "Release & Publish"
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🧮 Checkout code
+        uses: actions/checkout@v4 
+
+      - name: 🔧 Set up node environment
+        uses: actions/setup-node@v4
+        with:
+          cache: "yarn"
+          node-version-file: ".node-version"
+
+      - name: 🛠️ Setup
+        # When running `install` it also calls the `prepare` step which generates
+        # a build
+        run: yarn install --pure-lockfile
+
+      - name: 🚀 Publish to npm
+        id: npm-publish
+        uses: JS-DevTools/npm-publish@v3
+        with:
+          token: ${{ secrets.TCHAP_NPM_TOKEN }}
+          access: public
+
+      - name: 🧬 Create release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: v${{ steps.npm-publish.outputs.version }}
+          release_name: Release ${{ steps.npm-publish.outputs.version }}
+          body: ${{ steps.npm-publish.outputs.version }} Release
+          draft: false
+          prerelease: false
