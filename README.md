@@ -2,11 +2,11 @@
 
 # Tchap compound Web
 
-[![](https://img.shields.io/badge/-Storybook-ff4785?logo=Storybook&logoColor=white&style=flat-square)](https://tchapgouv.github.io/compound-web/) [![](https://img.shields.io/github/license/vector-im/compound)](https://github.com/vector-im/compound/blob/main/LICENSE)
+[![](https://img.shields.io/badge/-Storybook-ff4785?logo=Storybook&logoColor=white&style=flat-square)](https://tchapgouv.github.io/compound-web/) [![](https://img.shields.io/github/license/tchapgouv/compound)](https://github.com/tchapgouv/compound/blob/main/LICENSE)
 
 React implementation of Compound – Tchap's design system based on Element– See full documentation on https://tchapgouv.github.io/compound-web/
 
-It is using Tchap `compound-design-token` https://github.com/tchapgouv/compound-design-tokens `main` branch
+It is a soft fork of the element compound-web, but using Tchap `compound-design-token` https://github.com/tchapgouv/compound-design-tokens `main` branch
 
 ## New release
 
