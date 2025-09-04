@@ -1,8 +1,8 @@
 name: Release npm package tchap
 on:
-    push:
-        tags:
-            - "tchap-*"
+  push:
+    tags:
+      - "tchap-*"
 
 concurrency: release
 jobs:
@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 🧮 Checkout code
-        uses: actions/checkout@v4 
+        uses: actions/checkout@v4
 
       - name: 🔧 Set up node environment
         uses: actions/setup-node@v4
