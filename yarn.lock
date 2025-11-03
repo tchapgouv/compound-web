@@ -1632,7 +1632,7 @@
 
 "@vector-im/compound-design-tokens@https://github.com/tchapgouv/compound-design-tokens.git#angelo-uikit":
   version "6.0.0"
-  resolved "https://github.com/tchapgouv/compound-design-tokens.git#4f44183c60f50440bb1d8de96d61c3876890af6a"
+  resolved "https://github.com/tchapgouv/compound-design-tokens.git#23c566bb1c2506857d58e5f4e73f372851e9e714"
 
 "@vitejs/plugin-react@^4.0.4":
   version "4.5.2"
