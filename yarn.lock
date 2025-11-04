@@ -1631,8 +1631,8 @@
   integrity sha512-WmoN8qaIAo7WTYWbAZuG8PYEhn5fkz7dZrqTBZ7dtt//lL2Gwms1IcnQ5yHqjDfX8Ft5j4YzDM23f87zBfDe9g==
 
 "@vector-im/compound-design-tokens@https://github.com/tchapgouv/compound-design-tokens.git#main":
-  version "5.0.1"
-  resolved "https://github.com/tchapgouv/compound-design-tokens.git#ec50d7ea4be10b24ac9d0029c45858b774b20314"
+  version "6.0.0"
+  resolved "https://github.com/tchapgouv/compound-design-tokens.git#d51f40fddf8fb247347dfdbd0509a16a544e7835"
 
 "@vitejs/plugin-react@^4.0.4":
   version "4.5.2"
