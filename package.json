@@ -1,6 +1,6 @@
 {
   "name": "compound-web-tchap",
-  "version": "1.0.4-rc01",
+  "version": "1.0.4-rc02",
   "version_element": "8.1.1",
   "description": "Compound components for Tchap Web",
   "type": "module",
