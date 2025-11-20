@@ -1,6 +1,6 @@
 {
   "name": "compound-web-tchap",
-  "version": "1.0.4-rc01",
+  "version": "1.0.4",
   "version_element": "8.1.1",
   "description": "Compound components for Tchap Web",
   "type": "module",
@@ -76,7 +76,7 @@
     "@types/react": "^19.0.0",
     "@typescript-eslint/eslint-plugin": "^8.0.0",
     "@typescript-eslint/parser": "^8.0.0",
-    "@vector-im/compound-design-tokens": "https://github.com/tchapgouv/compound-design-tokens.git#angelo-uikit2",
+    "@vector-im/compound-design-tokens": "https://github.com/tchapgouv/compound-design-tokens.git#main",
     "@vitejs/plugin-react": "^4.0.4",
     "@vitest/coverage-v8": "^3.0.0",
     "browserslist-to-esbuild": "^2.0.0",
