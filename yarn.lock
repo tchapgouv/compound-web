@@ -1632,7 +1632,7 @@
 
 "@vector-im/compound-design-tokens@https://github.com/tchapgouv/compound-design-tokens.git#main":
   version "6.0.0"
-  resolved "https://github.com/tchapgouv/compound-design-tokens.git#d51f40fddf8fb247347dfdbd0509a16a544e7835"
+  resolved "https://github.com/tchapgouv/compound-design-tokens.git#687c9956e922ab2360f739c2abac00a0a19022e3"
 
 "@vitejs/plugin-react@^4.0.4":
   version "4.5.2"
