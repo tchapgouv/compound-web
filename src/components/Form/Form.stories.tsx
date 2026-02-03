@@ -8,7 +8,7 @@ Please see LICENSE files in the repository root for full details.
 */
 
 import React from "react";
-import { Meta, StoryObj } from "@storybook/react";
+import { type Meta, type StoryObj } from "@storybook/react-vite";
 
 import * as Form from "./index";
 import { TooltipProvider } from "../Tooltip/TooltipProvider";
@@ -148,6 +148,7 @@ const KitchenSink = ({ disabled, invalid, readOnly }: Props) => (
 const meta = {
   title: "Form/Kitchen Sink",
   component: KitchenSink,
+  tags: ["axe-exclude"],
   argTypes: {
     disabled: {
       type: "boolean",

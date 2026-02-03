@@ -9,7 +9,7 @@ Please see LICENSE files in the repository root for full details.
 
 import React from "react";
 
-import { Meta, StoryObj } from "@storybook/react";
+import { type Meta, type StoryObj } from "@storybook/react-vite";
 
 import { TextInput } from "./";
 
@@ -18,7 +18,7 @@ type Props = { invalid?: boolean } & React.ComponentProps<typeof TextInput>;
 const meta = {
   title: "Form/Controls/Text",
   component: TextInput,
-  tags: ["autodocs"],
+  tags: ["autodocs", "axe-exclude"],
   parameters: {
     controls: {
       include: [

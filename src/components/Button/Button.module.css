@@ -22,6 +22,9 @@ Please see LICENSE files in the repository root for full details.
 a.button {
   /* Make the width match that of a real button */
   inline-size: max-content;
+
+  /* Buttons should not be underlined */
+  text-decoration: none;
 }
 
 .button > svg {
@@ -209,4 +212,10 @@ a.button {
 .button[data-kind="tertiary"].destructive:active,
 .button[data-kind="tertiary"].destructive[aria-expanded="true"] {
   background: var(--cpd-color-bg-critical-subtle-hovered);
+}
+
+@media (forced-colors: active) {
+  .button[data-kind="primary"] {
+    outline: 1px solid transparent;
+  }
 }

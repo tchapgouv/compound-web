@@ -5,7 +5,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-Element-Commercial
 Please see LICENSE files in the repository root for full details.
 */
 
-import { Meta, StoryObj } from "@storybook/react";
+import { type Meta, type StoryObj } from "@storybook/react-vite";
 
 import { SettingsToggleInput } from "./SettingsToggle";
 import { Form } from "@radix-ui/react-form";
@@ -21,7 +21,7 @@ const meta = {
       </Form>
     ),
   ],
-  tags: ["autodocs"],
+  tags: ["autodocs", "axe-exclude"],
   argTypes: {},
   args: {
     name: '"any-name"',

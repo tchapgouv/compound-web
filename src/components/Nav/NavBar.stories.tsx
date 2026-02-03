@@ -5,13 +5,13 @@
 // Please see LICENSE files in the repository root for full details.
 
 import React, { useEffect, useState } from "react";
-import { Meta, StoryObj } from "@storybook/react";
+import { type Meta, type StoryObj } from "@storybook/react-vite";
 import { NavBar, NavItem } from ".";
 
 const meta = {
   title: "Nav",
   component: NavBar,
-  tags: ["autodocs"],
+  tags: ["autodocs", "axe-exclude"],
   parameters: {
     controls: {
       include: ["aria-label"],

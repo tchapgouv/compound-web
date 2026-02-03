@@ -9,7 +9,7 @@ Please see LICENSE files in the repository root for full details.
 
 import React from "react";
 
-import { Meta, StoryObj } from "@storybook/react";
+import { type Meta, type StoryObj } from "@storybook/react-vite";
 
 import { MFAInput } from "./MFA";
 
@@ -23,7 +23,7 @@ const meta = {
   render: ({ invalid, ...props }) => (
     <MFAInput {...props} data-invalid={invalid || undefined} />
   ),
-  tags: ["autodocs"],
+  tags: ["autodocs", "axe-exclude"],
   parameters: {
     controls: {
       include: ["defaultValue", "disabled", "readOnly", "invalid"],

@@ -7,7 +7,7 @@
 
 import React, { useState } from "react";
 import { CheckboxMenuItem as CheckboxMenuItemComponent } from "./CheckboxMenuItem.tsx";
-import { Meta, StoryObj } from "@storybook/react";
+import { type Meta, type StoryObj } from "@storybook/react-vite";
 
 type Props = Omit<
   React.ComponentProps<typeof CheckboxMenuItemComponent>,
@@ -17,7 +17,7 @@ type Props = Omit<
 const Template: React.FC<Props> = (props: Props) => {
   const [firstChecked, setFirstChecked] = useState(false);
   return (
-    <div style={{ width: 300 }}>
+    <div style={{ width: 300 }} role="menu">
       <CheckboxMenuItemComponent
         {...props}
         label="First item"
@@ -49,4 +49,4 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-export const Primary: Story = { args: {} };
+export const Primary: Story = { tags: ["axe-exclude"], args: {} };

@@ -5,7 +5,12 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-Element-Commercial
 Please see LICENSE files in the repository root for full details.
 */
 
-import React, { PropsWithChildren, forwardRef, ForwardedRef, Ref } from "react";
+import React, {
+  type PropsWithChildren,
+  forwardRef,
+  type ForwardedRef,
+  type Ref,
+} from "react";
 
 interface ButtonComponent {
   // With the explicit `as` prop
@@ -78,15 +83,16 @@ export const UnstyledButton = forwardRef(function UnstyledButton<
 
   return (
     <Component
-      {...restProps}
       ref={ref as Ref<C>}
       className={className}
-      // All elements roles should be overriden at the exceptions of anchors
-      // We want them to behave like links but look like buttons
+      // The elements roles should be set to button default, or link in the case of anchors.
+      // This should be overridable by props, say for example if you want to use a button as an option within a listbox.
+      // Hence it taking precedence over restProps.
       role={as === "a" ? "link" : "button"}
       tabIndex={0}
-      {...eventHandlers}
       aria-disabled={disabled}
+      {...restProps}
+      {...eventHandlers}
     >
       {children}
     </Component>

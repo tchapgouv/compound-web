@@ -4,19 +4,19 @@ exports[`Dropdown > can be opened 1`] = `
 <div>
   <div
     aria-invalid="false"
-    class="_container_87c1d6"
+    class="_container_1f39d3"
   >
     <label
-      id=":r8:"
+      id="_r_8_"
     >
       Label
     </label>
     <button
-      aria-controls=":r9:"
+      aria-controls="_r_9_"
       aria-expanded="true"
       aria-haspopup="listbox"
-      aria-labelledby=":r8:"
-      class="_placeholder_87c1d6"
+      aria-labelledby="_r_8_"
+      class="_placeholder_1f39d3"
       role="combobox"
     >
       Select an option
@@ -33,14 +33,14 @@ exports[`Dropdown > can be opened 1`] = `
       </svg>
     </button>
     <div
-      class="_border_87c1d6 _open_87c1d6"
+      class="_border_1f39d3 _open_1f39d3"
     />
     <div
-      class="_content_87c1d6 _open_87c1d6"
+      class="_content_1f39d3 _open_1f39d3"
     >
       <ul
-        class="_content_87c1d6"
-        id=":r9:"
+        class="_content_1f39d3"
+        id="_r_9_"
         role="listbox"
       >
         <li
@@ -77,18 +77,18 @@ exports[`Dropdown > can select a value 1`] = `
 <div>
   <div
     aria-invalid="false"
-    class="_container_87c1d6"
+    class="_container_1f39d3"
   >
     <label
-      id=":ra:"
+      id="_r_a_"
     >
       Label
     </label>
     <button
-      aria-controls=":rb:"
+      aria-controls="_r_b_"
       aria-expanded="true"
       aria-haspopup="listbox"
-      aria-labelledby=":ra:"
+      aria-labelledby="_r_a_"
       class=""
       role="combobox"
     >
@@ -106,14 +106,14 @@ exports[`Dropdown > can select a value 1`] = `
       </svg>
     </button>
     <div
-      class="_border_87c1d6 _open_87c1d6"
+      class="_border_1f39d3 _open_1f39d3"
     />
     <div
-      class="_content_87c1d6 _open_87c1d6"
+      class="_content_1f39d3 _open_1f39d3"
     >
       <ul
-        class="_content_87c1d6"
-        id=":rb:"
+        class="_content_1f39d3"
+        id="_r_b_"
         role="listbox"
       >
         <li
@@ -161,19 +161,19 @@ exports[`Dropdown > renders a Default dropdown 1`] = `
 <div>
   <div
     aria-invalid="false"
-    class="_container_87c1d6"
+    class="_container_1f39d3"
   >
     <label
-      id=":r0:"
+      id="_r_0_"
     >
       Label
     </label>
     <button
-      aria-controls=":r1:"
+      aria-controls="_r_1_"
       aria-expanded="false"
       aria-haspopup="listbox"
-      aria-labelledby=":r0:"
-      class="_placeholder_87c1d6"
+      aria-labelledby="_r_0_"
+      class="_placeholder_1f39d3"
       role="combobox"
     >
       Select an option
@@ -190,14 +190,14 @@ exports[`Dropdown > renders a Default dropdown 1`] = `
       </svg>
     </button>
     <div
-      class="_border_87c1d6"
+      class="_border_1f39d3"
     />
     <div
-      class="_content_87c1d6"
+      class="_content_1f39d3"
     >
       <ul
-        class="_content_87c1d6"
-        id=":r1:"
+        class="_content_1f39d3"
+        id="_r_1_"
         role="listbox"
       >
         <li
@@ -234,18 +234,18 @@ exports[`Dropdown > renders a dropdown with a default value  1`] = `
 <div>
   <div
     aria-invalid="false"
-    class="_container_87c1d6"
+    class="_container_1f39d3"
   >
     <label
-      id=":r6:"
+      id="_r_6_"
     >
       Label
     </label>
     <button
-      aria-controls=":r7:"
+      aria-controls="_r_7_"
       aria-expanded="false"
       aria-haspopup="listbox"
-      aria-labelledby=":r6:"
+      aria-labelledby="_r_6_"
       class=""
       role="combobox"
     >
@@ -263,14 +263,14 @@ exports[`Dropdown > renders a dropdown with a default value  1`] = `
       </svg>
     </button>
     <div
-      class="_border_87c1d6"
+      class="_border_1f39d3"
     />
     <div
-      class="_content_87c1d6"
+      class="_content_1f39d3"
     >
       <ul
-        class="_content_87c1d6"
-        id=":r7:"
+        class="_content_1f39d3"
+        id="_r_7_"
         role="listbox"
       >
         <li
@@ -318,19 +318,19 @@ exports[`Dropdown > renders a dropdown with a help label 1`] = `
 <div>
   <div
     aria-invalid="false"
-    class="_container_87c1d6"
+    class="_container_1f39d3"
   >
     <label
-      id=":r2:"
+      id="_r_2_"
     >
       Label
     </label>
     <button
-      aria-controls=":r3:"
+      aria-controls="_r_3_"
       aria-expanded="false"
       aria-haspopup="listbox"
-      aria-labelledby=":r2:"
-      class="_placeholder_87c1d6"
+      aria-labelledby="_r_2_"
+      class="_placeholder_1f39d3"
       role="combobox"
     >
       Select an option
@@ -347,14 +347,14 @@ exports[`Dropdown > renders a dropdown with a help label 1`] = `
       </svg>
     </button>
     <div
-      class="_border_87c1d6"
+      class="_border_1f39d3"
     />
     <div
-      class="_content_87c1d6"
+      class="_content_1f39d3"
     >
       <ul
-        class="_content_87c1d6"
-        id=":r3:"
+        class="_content_1f39d3"
+        id="_r_3_"
         role="listbox"
       >
         <li
@@ -384,7 +384,7 @@ exports[`Dropdown > renders a dropdown with a help label 1`] = `
       </ul>
     </div>
     <span
-      class="_help_87c1d6"
+      class="_help_1f39d3"
     >
       Optional help text.
     </span>
@@ -396,19 +396,19 @@ exports[`Dropdown > renders a dropdown with an error  1`] = `
 <div>
   <div
     aria-invalid="true"
-    class="_container_87c1d6"
+    class="_container_1f39d3"
   >
     <label
-      id=":r4:"
+      id="_r_4_"
     >
       Label
     </label>
     <button
-      aria-controls=":r5:"
+      aria-controls="_r_5_"
       aria-expanded="false"
       aria-haspopup="listbox"
-      aria-labelledby=":r4:"
-      class="_placeholder_87c1d6"
+      aria-labelledby="_r_4_"
+      class="_placeholder_1f39d3"
       role="combobox"
     >
       Select an option
@@ -425,14 +425,14 @@ exports[`Dropdown > renders a dropdown with an error  1`] = `
       </svg>
     </button>
     <div
-      class="_border_87c1d6"
+      class="_border_1f39d3"
     />
     <div
-      class="_content_87c1d6"
+      class="_content_1f39d3"
     >
       <ul
-        class="_content_87c1d6"
-        id=":r5:"
+        class="_content_1f39d3"
+        id="_r_5_"
         role="listbox"
       >
         <li
@@ -462,7 +462,7 @@ exports[`Dropdown > renders a dropdown with an error  1`] = `
       </ul>
     </div>
     <span
-      class="_error_87c1d6"
+      class="_error_1f39d3"
     >
       <svg
         fill="currentColor"

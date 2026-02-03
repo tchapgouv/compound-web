@@ -6,10 +6,11 @@ Please see LICENSE files in the repository root for full details.
 */
 
 import {
-  ComponentProps,
-  ComponentRef,
+  type ComponentProps,
+  type ComponentRef,
   forwardRef,
-  PropsWithChildren,
+  type PropsWithChildren,
+  useId,
 } from "react";
 import { ToggleInput } from "../Toggle";
 import { Label } from "../../Label";
@@ -48,13 +49,15 @@ export const SettingsToggleInput = forwardRef<
   { className, label, helpMessage, disabledMessage, name, ...props },
   ref,
 ) {
+  const generatedId = useId();
+  const id = props.id ?? generatedId;
   const content = (
     <InlineField
       className={className}
       name={name}
-      control={<ToggleInput ref={ref} {...props} />}
+      control={<ToggleInput id={id} ref={ref} {...props} />}
     >
-      <Label>{label}</Label>
+      <Label htmlFor={id}>{label}</Label>
       {helpMessage && <HelpMessage>{helpMessage}</HelpMessage>}
       {disabledMessage && props.disabled && (
         <HelpMessage>{disabledMessage}</HelpMessage>
