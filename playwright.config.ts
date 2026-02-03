@@ -23,11 +23,31 @@ export default defineConfig({
         viewport: { width: 720, height: 720 },
       },
     },
+    {
+      name: "contrast",
+      use: {
+        ...devices["Desktop Firefox"],
+        viewport: { width: 720, height: 720 },
+        launchOptions: {
+          firefoxUserPrefs: {
+            "browser.display.document_color_use": 2,
+          },
+        },
+      },
+    },
   ],
   webServer: {
     command: `npx serve -c ../.serverc.json -p ${port} -L storybook-static/`,
     url: baseUrl,
     reuseExistingServer: !process.env.CI,
   },
-  reporter: "html",
+  reporter: process.env.CI
+    ? [
+        ["html"],
+        ["github"],
+        [
+          "@element-hq/element-web-playwright-common/lib/stale-screenshot-reporter.js",
+        ],
+      ]
+    : [["html"]],
 });

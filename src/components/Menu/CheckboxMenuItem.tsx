@@ -5,7 +5,12 @@
  * Please see LICENSE files in the repository root for full details.
  */
 
-import React, { ComponentProps, forwardRef, useCallback, useId } from "react";
+import React, {
+  type ComponentProps,
+  forwardRef,
+  useCallback,
+  useId,
+} from "react";
 import { MenuItem } from "./MenuItem";
 import { CheckboxInput } from "../Form";
 
@@ -34,15 +39,16 @@ export const CheckboxMenuItem = forwardRef<HTMLInputElement, Props>(
     const onChange = useCallback(() => {}, []);
 
     // <label> elements are not allowed to have a role like menuitemcheckbox, so
-    // we must instead use a plain <div> for the menu item and use aria-checked
+    // we must instead use a <button> for the menu item and use aria-checked
     // etc. to communicate its state.
     return (
       <MenuItem
-        as="div"
+        as="button"
         role="menuitemcheckbox"
         aria-checked={checked}
         className={className}
         label={label}
+        hideChevron
         onSelect={onSelect}
         disabled={disabled}
         Icon={
@@ -51,6 +57,7 @@ export const CheckboxMenuItem = forwardRef<HTMLInputElement, Props>(
             ref={ref}
             // This is purely cosmetic; really the whole MenuItem is the toggle.
             aria-hidden
+            tabIndex={-1}
             checked={checked}
             disabled={disabled}
             onChange={onChange}

@@ -3,22 +3,22 @@
 exports[`Progress > renders a green progress bar 1`] = `
 <div>
   <div
-    class="_progress-bar-container_e5fb97"
+    class="_progress-bar-container_a46e85"
     data-tint="green"
   >
     <div
-      class="_progress-bar-label_e5fb97"
-      id=":r5:"
+      class="_progress-bar-label_a46e85"
+      id="_r_5_"
     >
       Full progress bar
     </div>
     <div
-      aria-labelledby=":r5:"
+      aria-labelledby="_r_5_"
       aria-valuemax="100"
       aria-valuemin="0"
       aria-valuenow="100"
       aria-valuetext="Full progress bar"
-      class="_progress-bar_e5fb97"
+      class="_progress-bar_a46e85"
       data-max="100"
       data-size="sm"
       data-state="complete"
@@ -26,7 +26,7 @@ exports[`Progress > renders a green progress bar 1`] = `
       role="progressbar"
     >
       <div
-        class="_progress-bar-indicator_e5fb97"
+        class="_progress-bar-indicator_a46e85"
         data-max="100"
         data-state="complete"
         data-value="100"
@@ -40,22 +40,22 @@ exports[`Progress > renders a green progress bar 1`] = `
 exports[`Progress > renders a large full progress bar 1`] = `
 <div>
   <div
-    class="_progress-bar-container_e5fb97"
+    class="_progress-bar-container_a46e85"
     data-tint="green"
   >
     <div
-      class="_progress-bar-label_e5fb97"
-      id=":r2:"
+      class="_progress-bar-label_a46e85"
+      id="_r_2_"
     >
       Full progress bar
     </div>
     <div
-      aria-labelledby=":r2:"
+      aria-labelledby="_r_2_"
       aria-valuemax="100"
       aria-valuemin="0"
       aria-valuenow="100"
       aria-valuetext="Full progress bar"
-      class="_progress-bar_e5fb97"
+      class="_progress-bar_a46e85"
       data-max="100"
       data-size="lg"
       data-state="complete"
@@ -63,7 +63,7 @@ exports[`Progress > renders a large full progress bar 1`] = `
       role="progressbar"
     >
       <div
-        class="_progress-bar-indicator_e5fb97"
+        class="_progress-bar-indicator_a46e85"
         data-max="100"
         data-state="complete"
         data-value="100"
@@ -77,22 +77,22 @@ exports[`Progress > renders a large full progress bar 1`] = `
 exports[`Progress > renders a large half progress bar 1`] = `
 <div>
   <div
-    class="_progress-bar-container_e5fb97"
+    class="_progress-bar-container_a46e85"
     data-tint="green"
   >
     <div
-      class="_progress-bar-label_e5fb97"
-      id=":r3:"
+      class="_progress-bar-label_a46e85"
+      id="_r_3_"
     >
       Half-full progress bar
     </div>
     <div
-      aria-labelledby=":r3:"
+      aria-labelledby="_r_3_"
       aria-valuemax="100"
       aria-valuemin="0"
       aria-valuenow="50"
       aria-valuetext="Half-full progress bar"
-      class="_progress-bar_e5fb97"
+      class="_progress-bar_a46e85"
       data-max="100"
       data-size="lg"
       data-state="loading"
@@ -100,7 +100,7 @@ exports[`Progress > renders a large half progress bar 1`] = `
       role="progressbar"
     >
       <div
-        class="_progress-bar-indicator_e5fb97"
+        class="_progress-bar-indicator_a46e85"
         data-max="100"
         data-state="loading"
         data-value="50"
@@ -114,22 +114,22 @@ exports[`Progress > renders a large half progress bar 1`] = `
 exports[`Progress > renders a lime progress bar 1`] = `
 <div>
   <div
-    class="_progress-bar-container_e5fb97"
+    class="_progress-bar-container_a46e85"
     data-tint="lime"
   >
     <div
-      class="_progress-bar-label_e5fb97"
-      id=":r7:"
+      class="_progress-bar-label_a46e85"
+      id="_r_7_"
     >
       Three-quarters full progress bar
     </div>
     <div
-      aria-labelledby=":r7:"
+      aria-labelledby="_r_7_"
       aria-valuemax="100"
       aria-valuemin="0"
       aria-valuenow="75"
       aria-valuetext="Three-quarters full progress bar"
-      class="_progress-bar_e5fb97"
+      class="_progress-bar_a46e85"
       data-max="100"
       data-size="sm"
       data-state="loading"
@@ -137,7 +137,7 @@ exports[`Progress > renders a lime progress bar 1`] = `
       role="progressbar"
     >
       <div
-        class="_progress-bar-indicator_e5fb97"
+        class="_progress-bar-indicator_a46e85"
         data-max="100"
         data-state="loading"
         data-value="75"
@@ -151,22 +151,22 @@ exports[`Progress > renders a lime progress bar 1`] = `
 exports[`Progress > renders a red progress bar 1`] = `
 <div>
   <div
-    class="_progress-bar-container_e5fb97"
+    class="_progress-bar-container_a46e85"
     data-tint="red"
   >
     <div
-      class="_progress-bar-label_e5fb97"
-      id=":r6:"
+      class="_progress-bar-label_a46e85"
+      id="_r_6_"
     >
       Quarter-full progress bar
     </div>
     <div
-      aria-labelledby=":r6:"
+      aria-labelledby="_r_6_"
       aria-valuemax="100"
       aria-valuemin="0"
       aria-valuenow="25"
       aria-valuetext="Quarter-full progress bar"
-      class="_progress-bar_e5fb97"
+      class="_progress-bar_a46e85"
       data-max="100"
       data-size="sm"
       data-state="loading"
@@ -174,7 +174,7 @@ exports[`Progress > renders a red progress bar 1`] = `
       role="progressbar"
     >
       <div
-        class="_progress-bar-indicator_e5fb97"
+        class="_progress-bar-indicator_a46e85"
         data-max="100"
         data-state="loading"
         data-value="25"
@@ -188,22 +188,22 @@ exports[`Progress > renders a red progress bar 1`] = `
 exports[`Progress > renders a small full progress bar 1`] = `
 <div>
   <div
-    class="_progress-bar-container_e5fb97"
+    class="_progress-bar-container_a46e85"
     data-tint="green"
   >
     <div
-      class="_progress-bar-label_e5fb97"
-      id=":r0:"
+      class="_progress-bar-label_a46e85"
+      id="_r_0_"
     >
       Full progress bar
     </div>
     <div
-      aria-labelledby=":r0:"
+      aria-labelledby="_r_0_"
       aria-valuemax="100"
       aria-valuemin="0"
       aria-valuenow="100"
       aria-valuetext="Full progress bar"
-      class="_progress-bar_e5fb97"
+      class="_progress-bar_a46e85"
       data-max="100"
       data-size="sm"
       data-state="complete"
@@ -211,7 +211,7 @@ exports[`Progress > renders a small full progress bar 1`] = `
       role="progressbar"
     >
       <div
-        class="_progress-bar-indicator_e5fb97"
+        class="_progress-bar-indicator_a46e85"
         data-max="100"
         data-state="complete"
         data-value="100"
@@ -225,22 +225,22 @@ exports[`Progress > renders a small full progress bar 1`] = `
 exports[`Progress > renders a small half progress bar 1`] = `
 <div>
   <div
-    class="_progress-bar-container_e5fb97"
+    class="_progress-bar-container_a46e85"
     data-tint="green"
   >
     <div
-      class="_progress-bar-label_e5fb97"
-      id=":r1:"
+      class="_progress-bar-label_a46e85"
+      id="_r_1_"
     >
       Half-full progress bar
     </div>
     <div
-      aria-labelledby=":r1:"
+      aria-labelledby="_r_1_"
       aria-valuemax="100"
       aria-valuemin="0"
       aria-valuenow="50"
       aria-valuetext="Half-full progress bar"
-      class="_progress-bar_e5fb97"
+      class="_progress-bar_a46e85"
       data-max="100"
       data-size="sm"
       data-state="loading"
@@ -248,7 +248,7 @@ exports[`Progress > renders a small half progress bar 1`] = `
       role="progressbar"
     >
       <div
-        class="_progress-bar-indicator_e5fb97"
+        class="_progress-bar-indicator_a46e85"
         data-max="100"
         data-state="loading"
         data-value="50"
@@ -262,21 +262,21 @@ exports[`Progress > renders a small half progress bar 1`] = `
 exports[`Progress > renders an empty progress bar 1`] = `
 <div>
   <div
-    class="_progress-bar-container_e5fb97"
+    class="_progress-bar-container_a46e85"
   >
     <div
-      class="_progress-bar-label_e5fb97"
-      id=":r4:"
+      class="_progress-bar-label_a46e85"
+      id="_r_4_"
     >
       Empty progress bar
     </div>
     <div
-      aria-labelledby=":r4:"
+      aria-labelledby="_r_4_"
       aria-valuemax="100"
       aria-valuemin="0"
       aria-valuenow="0"
       aria-valuetext="Empty progress bar"
-      class="_progress-bar_e5fb97"
+      class="_progress-bar_a46e85"
       data-max="100"
       data-size="sm"
       data-state="loading"
@@ -284,7 +284,7 @@ exports[`Progress > renders an empty progress bar 1`] = `
       role="progressbar"
     >
       <div
-        class="_progress-bar-indicator_e5fb97"
+        class="_progress-bar-indicator_a46e85"
         data-max="100"
         data-state="loading"
         data-value="0"

@@ -8,14 +8,14 @@ Please see LICENSE files in the repository root for full details.
 import React, {
   cloneElement,
   isValidElement,
-  JSX,
-  PropsWithChildren,
-  Ref,
+  type JSX,
+  type PropsWithChildren,
+  type Ref,
 } from "react";
 import {
   FloatingPortal,
   FloatingFocusManager,
-  Placement,
+  type Placement,
   useMergeRefs,
   FloatingArrow,
 } from "@floating-ui/react";
@@ -30,8 +30,10 @@ import { useReleaseAnnouncement } from "./useReleaseAnnouncement";
 
 type UseReleaseAnnouncementParam = Parameters<typeof useReleaseAnnouncement>[0];
 
-interface ReleaseAnnouncementProps
-  extends Omit<UseReleaseAnnouncementParam, "placement" | "displayArrow"> {
+interface ReleaseAnnouncementProps extends Omit<
+  UseReleaseAnnouncementParam,
+  "placement" | "displayArrow"
+> {
   /**
    * The placement of the component
    * @default "right"
@@ -93,17 +95,24 @@ function ReleaseAnnouncementAnchor({
     );
   }
 
-  return cloneElement(
-    children,
-    context.getReferenceProps({
-      ref,
-      // If the ReleaseAnnouncement is open, we need manually aria-describedby.
-      // The RA has the dialog role and it's not adding automatically the aria-describedby.
-      ...(context.open && {
-        "aria-describedby": context.getFloatingProps().id as string,
-      }),
+  const referenceProps = context.getReferenceProps({
+    ref,
+    // If the ReleaseAnnouncement is open, we need manually aria-describedby.
+    // The RA has the dialog role and it's not adding automatically the aria-describedby.
+    ...(context.open && {
+      "aria-describedby": context.getFloatingProps().id as string,
     }),
-  );
+  });
+
+  // getReferenceProps includes aria-expanded (being true when the popup is shown)
+  // but axe only allows this on certain elements and we use release anncounements on
+  // all sorts of elements. Semantically, I don't think it makes sense because the point
+  // of aria-expanded is a hint to the user that there is something that can be expanded.
+  // The user can't cause a release announcement to be shown, it just appears when it thinks
+  // it's time, so I think adding it here is misleading.
+  delete referenceProps["aria-expanded"];
+
+  return cloneElement(children, referenceProps);
 }
 
 /**

@@ -5,7 +5,12 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-Element-Commercial
 Please see LICENSE files in the repository root for full details.
 */
 
-import React, { ComponentProps, forwardRef, useCallback, useId } from "react";
+import React, {
+  type ComponentProps,
+  forwardRef,
+  useCallback,
+  useId,
+} from "react";
 import { MenuItem } from "./MenuItem";
 import { ToggleInput } from "../Form/Controls/Toggle";
 
@@ -38,12 +43,13 @@ export const ToggleMenuItem = forwardRef<HTMLInputElement, Props>(
     // etc. to communicate its state.
     return (
       <MenuItem
-        as="div"
+        as="button"
         role="menuitemcheckbox"
         aria-checked={checked}
         className={className}
         Icon={Icon}
         label={label}
+        hideChevron
         onSelect={onSelect}
         disabled={disabled}
         onClick={onClick}
@@ -53,6 +59,7 @@ export const ToggleMenuItem = forwardRef<HTMLInputElement, Props>(
           ref={ref}
           // This is purely cosmetic; really the whole MenuItem is the toggle.
           aria-hidden
+          tabIndex={-1}
           checked={checked}
           disabled={disabled}
           onChange={onChange}

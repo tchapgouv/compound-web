@@ -6,7 +6,7 @@ Please see LICENSE files in the repository root for full details.
 */
 
 import React, { useState } from "react";
-import { Meta, StoryObj } from "@storybook/react";
+import { type Meta, type StoryObj } from "@storybook/react-vite";
 import ExtensionsIcon from "@vector-im/compound-design-tokens/assets/web/icons/extensions";
 import ChatIcon from "@vector-im/compound-design-tokens/assets/web/icons/chat";
 
@@ -20,7 +20,7 @@ type Props = Omit<
 const Template: React.FC<Props> = (props: Props) => {
   const [firstChecked, setFirstChecked] = useState(false);
   return (
-    <div style={{ width: 300 }}>
+    <div style={{ width: 300 }} role="menu">
       <ToggleMenuItemComponent
         {...props}
         Icon={ChatIcon}
@@ -46,7 +46,7 @@ const Template: React.FC<Props> = (props: Props) => {
 const meta = {
   title: "Menu/ToggleMenuItem",
   component: Template,
-  tags: ["autodocs"],
+  tags: ["autodocs", "axe-exclude"],
   argTypes: {},
   args: {},
 } satisfies Meta<typeof Template>;

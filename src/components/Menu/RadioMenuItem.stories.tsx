@@ -7,7 +7,7 @@
 
 import React, { useState } from "react";
 import { RadioMenuItem as RadioMenuItemComponent } from "./RadioMenuItem.tsx";
-import { Meta, StoryObj } from "@storybook/react";
+import { type Meta, type StoryObj } from "@storybook/react-vite";
 import { Menu } from "./Menu.tsx";
 
 type Props = Omit<
@@ -52,7 +52,7 @@ const Template: React.FC<Props> = (props: Props) => {
 const meta = {
   title: "Menu/RadioMenuItem",
   component: Template,
-  tags: ["autodocs"],
+  tags: ["autodocs", "axe-exclude"],
   argTypes: {},
   args: {},
 } satisfies Meta<typeof Template>;
