@@ -24,12 +24,23 @@ jobs:
         # a build
         run: yarn install --pure-lockfile
 
+      - name: 🏷️ Extract version from tag
+        id: extract-version
+        run: |
+          TAG="${GITHUB_REF_NAME#toto-}"
+          if [[ "$TAG" == *"rc"* ]]; then
+            echo "dist_tag=next" >> $GITHUB_OUTPUT
+          else
+            echo "dist_tag=latest" >> $GITHUB_OUTPUT
+          fi
+
       - name: 🚀 Publish to npm
         id: npm-publish
         uses: JS-DevTools/npm-publish@v3
         with:
           token: ${{ secrets.TCHAP_NPM_TOKEN }}
           access: public
+          tag: ${{ steps.extract-version.outputs.dist_tag }}
 
       - name: 🧬 Create release
         uses: actions/create-release@v1
