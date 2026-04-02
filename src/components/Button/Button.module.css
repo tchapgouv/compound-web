@@ -6,7 +6,8 @@ Please see LICENSE files in the repository root for full details.
 */
 
 .button {
-  border-radius: var(--cpd-radius-pill-effect);
+  /* :TCHAP: border-radius: var(--cpd-radius-pill-effect); */
+  border-radius: 4px;
   cursor: pointer;
   appearance: none;
   display: flex;
