@@ -1,6 +1,6 @@
 {
   "name": "compound-web-tchap",
-  "version": "1.1.0-rc0",
+  "version": "1.1.0-rc1",
   "version_element": "8.3.4",
   "description": "Compound components for Tchap Web",
   "type": "module",
@@ -74,7 +74,7 @@
     "@types/react": "^19.0.0",
     "@typescript-eslint/eslint-plugin": "^8.0.0",
     "@typescript-eslint/parser": "^8.0.0",
-    "@vector-im/compound-design-tokens": "git+https://github.com/tchapgouv/compound-design-tokens.git#angelo-hc",
+    "@vector-im/compound-design-tokens": "git+https://github.com/tchapgouv/compound-design-tokens.git#angelo-update6.10",
     "@vitejs/plugin-react": "^5.0.0",
     "@vitest/coverage-v8": "^4.0.0",
     "browserslist-to-esbuild": "^2.0.0",
@@ -117,12 +117,13 @@
     "@fontsource/inconsolata": "^5",
     "@fontsource/inter": "^5",
     "@types/react": "*",
-    "@vector-im/compound-design-tokens": "git+https://github.com/tchapgouv/compound-design-tokens.git#angelo-hc",
+    "@vector-im/compound-design-tokens": "*",
     "react": "^18 || ^19.0.0"
   },
   "peerDependenciesMeta": {
     "@types/react": {
       "optional": true
     }
-  }
+  },
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
 }
