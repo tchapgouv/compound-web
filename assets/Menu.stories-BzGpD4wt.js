@@ -1,0 +1,10 @@
+import{j as t}from"./jsx-runtime-u17CrQMm.js";import{r as m}from"./iframe-D8F2MLhC.js";import"./index-BR41oNCb.js";import{U as p}from"./user-profile-CebyKxoQ.js";import{N as s,C as c,L as l}from"./notifications-B6q_uEvr.js";import{M as u}from"./Menu--Fd8H54Z.js";import{M as e}from"./MenuItem-DOhNmRHH.js";import{S as d}from"./Separator-PPOXV4CW.js";import{B as f}from"./Button-B01WaJ9E.js";import{M as x}from"./MenuTitle-BRGrJ0bT.js";import"./preload-helper-PPVm8Dsz.js";import"./index-68kiprYs.js";import"./index-CfP0lrOG.js";import"./index-CnJm0euE.js";import"./index-Cbaz8l8i.js";import"./index-CnPR1VMx.js";import"./floating-ui.react-dom-B9E8Woht.js";import"./FloatingMenu-aTmDg9td.js";import"./index-h1InBQjK.js";import"./DrawerMenu-Dvyae7VI.js";import"./Text-CXt5sXln.js";import"./Typography-DpsV9-vw.js";import"./chevron-right-gLJtmU_P.js";import"./index-e-oElrbJ.js";import"./floating-ui.react-ssphTCJc.js";import"./UnstyledButton-BMqJA9Av.js";const g=a=>{const[i,n]=m.useState(!0);return t.jsxs(u,{...a,open:i,onOpenChange:n,trigger:t.jsx(f,{children:"Open menu"}),align:"start",children:[t.jsx(e,{Icon:p,label:"Profile",onSelect:()=>{}}),t.jsx(e,{Icon:s,label:"Notifications",onSelect:()=>{}}),t.jsx(x,{title:"Other section"}),t.jsx(e,{Icon:s,label:"Other Notifications",onSelect:()=>{}}),t.jsx(e,{Icon:c,label:"Feedback",onSelect:()=>{}}),t.jsx(d,{}),t.jsx(e,{kind:"critical",Icon:l,label:"Sign out",onSelect:()=>{}})]})},A={title:"Menu",component:g,tags:["autodocs","axe-exclude"],argTypes:{},args:{}},o={args:{title:"Today's Menu"}},r={args:{title:"Untitled Menu",showTitle:!1}};o.parameters={...o.parameters,docs:{...o.parameters?.docs,source:{originalSource:`{
+  args: {
+    title: "Today's Menu"
+  }
+}`,...o.parameters?.docs?.source}}};r.parameters={...r.parameters,docs:{...r.parameters?.docs,source:{originalSource:`{
+  args: {
+    title: "Untitled Menu",
+    showTitle: false
+  }
+}`,...r.parameters?.docs?.source}}};const D=["Menu","WithoutTitle"];export{o as Menu,r as WithoutTitle,D as __namedExportsOrder,A as default};
