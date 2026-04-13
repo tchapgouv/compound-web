@@ -74,7 +74,7 @@
     "@types/react": "^19.0.0",
     "@typescript-eslint/eslint-plugin": "^8.0.0",
     "@typescript-eslint/parser": "^8.0.0",
-    "@vector-im/compound-design-tokens": "https://github.com/tchapgouv/compound-design-tokens.git#main",
+    "@vector-im/compound-design-tokens": "git+https://github.com/tchapgouv/compound-design-tokens.git#main",
     "@vitejs/plugin-react": "^5.0.0",
     "@vitest/coverage-v8": "^4.0.0",
     "browserslist-to-esbuild": "^2.0.0",
