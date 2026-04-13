@@ -9,6 +9,9 @@ jobs:
   release:
     name: "Release & Publish"
     runs-on: ubuntu-latest
+    permissions: 
+      contents: write
+      id-token: write
     steps:
       - name: 🧮 Checkout code
         uses: actions/checkout@v4
@@ -19,17 +22,25 @@ jobs:
           cache: "yarn"
           node-version-file: ".node-version"
 
+      # Ensure npm 11.5.1 or later is installed
+      - name: Update npm
+        run: npm install -g npm@latest
+
       - name: 🛠️ Setup
         # When running `install` it also calls the `prepare` step which generates
         # a build
         run: yarn install --pure-lockfile
 
+      # - name: 🚀 Publish to npm
+      #   id: npm-publish
+      #   uses: JS-DevTools/npm-publish@v3
+      #   with:
+      #     token: ${{ secrets.TCHAP_NPM_TOKEN }}
+      #     access: public
       - name: 🚀 Publish to npm
         id: npm-publish
-        uses: JS-DevTools/npm-publish@v3
-        with:
-          token: ${{ secrets.TCHAP_NPM_TOKEN }}
-          access: public
+        run: |
+          npm publish --access public --provenance
 
       - name: 🧬 Create release
         uses: actions/create-release@v1
