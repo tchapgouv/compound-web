@@ -1719,7 +1719,7 @@
 
 "@vector-im/compound-design-tokens@git+https://github.com/tchapgouv/compound-design-tokens.git#main":
   version "6.10.0"
-  resolved "git+https://github.com/tchapgouv/compound-design-tokens.git#798e58c9858500f89715996fb4b6a1ee6f5f6e9f"
+  resolved "git+https://github.com/tchapgouv/compound-design-tokens.git#3ce8111a4e659af3118ea6a7b5207809929b1d73"
 
 "@vitejs/plugin-react@^5.0.0":
   version "5.2.0"
