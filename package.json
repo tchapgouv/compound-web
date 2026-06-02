@@ -1,7 +1,8 @@
 {
-  "name": "@vector-im/compound-web",
-  "version": "9.1.0",
-  "description": "Compound components for the Web",
+  "name": "compound-web-tchap",
+  "version": "5.0.6",
+  "version_element": "9.1.0",
+  "description": "Compound components for Tchap Web",
   "type": "module",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
@@ -36,20 +37,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/element-hq/compound-web.git"
+    "url": "git+https://github.com/tchapgouv/compound-web.git"
   },
   "keywords": [
     "compound",
     "components",
     "element",
+    "tchap",
     "matrix.org"
   ],
   "author": "",
   "license": "SEE LICENSE IN README.md",
   "bugs": {
-    "url": "https://github.com/vector-im/compound/issues"
+    "url": "https://github.com/tchapgouv/compound-web/issues"
   },
-  "homepage": "https://github.com/vector-im/compound-web#readme",
+  "homepage": "https://github.com/tchapgouv/compound-web#readme",
   "devDependencies": {
     "@element-hq/element-web-playwright-common": "^3.0.0",
     "@fontsource/inconsolata": "^5.0.8",
@@ -72,7 +74,7 @@
     "@types/react": "^19.0.0",
     "@typescript-eslint/eslint-plugin": "^8.0.0",
     "@typescript-eslint/parser": "^8.0.0",
-    "@vector-im/compound-design-tokens": "^10.1.0",
+    "@vector-im/compound-design-tokens": "git+https://github.com/tchapgouv/compound-design-tokens.git#web-10.1.0",
     "@vitejs/plugin-react": "^6.0.0",
     "@vitest/coverage-v8": "^4.0.0",
     "browserslist-to-esbuild": "^2.0.0",
@@ -115,12 +117,16 @@
     "@fontsource/inconsolata": "^5",
     "@fontsource/inter": "^5",
     "@types/react": "*",
-    "@vector-im/compound-design-tokens": ">=1.6.1 <11.0.0",
+    "@vector-im/compound-design-tokens": "git+https://github.com/tchapgouv/compound-design-tokens.git#web-10.1.0",
     "react": "^18 || ^19.0.0"
   },
   "peerDependenciesMeta": {
     "@types/react": {
       "optional": true
     }
-  }
+  },
+  "resolutions": {
+    "vite": "^7.0.0"
+  },
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
 }
